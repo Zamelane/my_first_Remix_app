@@ -1,7 +1,8 @@
 import { sequelize } from '@db'
 import { DataTypes } from 'sequelize'
+import { SPOInstance } from '~/routes/spo/columns'
 
-export const SPOModel = sequelize.define(
+export const SPOModel = sequelize.define<SPOInstance>(
   'SPO',
   {
     id: {
