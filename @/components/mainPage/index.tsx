@@ -19,7 +19,7 @@ export default function mainPage() {
                 collapsible
                 onCollapse={checkSize}
                 onExpand={checkSize}
-                className={'min-w-[fit-content] ' + (!getResizable && 'transition-all duration-300 ease-in-out')}>
+                className={'min-w-[fit-content] max-w-[250px] ' + (!getResizable && 'max-w-[50px] transition-all duration-300 ease-in-out')}>
                 <Menu resizableState={getResizable} />
             </ResizablePanel>
             <ResizableHandle withHandle />
